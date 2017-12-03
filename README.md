@@ -2,9 +2,11 @@
 
 A Lambda Calculus implementation in Clojure.
 
-Inspired in [Programming With Nothing by Tom Stuart](https://github.com/tomstuart/nothing)
+Inspired in [Programming With Nothing by Tom Stuart](https://github.com/tomstuart/nothing).
 
 ## Usage
 
-Project created used `lein`. Run `lein test` to run the tests
+Project created used `lein`. Run `lein test` to run the tests.
+
+You can also run a REPL in a Docker container, executing `./run.sh`
 
