@@ -14,7 +14,7 @@
   (λ p (λ q ((p p) q))))
 
 (def Not
-  (λ p (λ a (λ b ((p b) a)))))
+  (λ p ((p F) T)))
 
 (def Xor
   (λ a (λ b ((a (Not b)) b))))
