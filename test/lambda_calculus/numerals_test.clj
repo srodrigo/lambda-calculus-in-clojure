@@ -57,6 +57,13 @@
           (toInt ((exp (fromInt 2)) ((exp (fromInt 2)) (fromInt 3))))
           256))))
 
+(deftest λ-numeral-expressions
+  (testing "numeral expressions"
+    ; 3 * (2 + 5) - 2^3
+    (is (=
+         (toInt ((minus ((mult (fromInt 3)) ((plus (fromInt 2)) (fromInt 5)))) ((exp (fromInt 2)) (fromInt 3))))
+         13))))
+
 (deftest λ-toStr
   (testing "toStr"
     (is (= (toStr zero) "λf.λn.(n)"))
