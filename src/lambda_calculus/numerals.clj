@@ -19,7 +19,7 @@
 (def plus
   (λ m (λ n ((n succ) m))))
 
-(def substract
+(def minus
   (λ m (λ n ((n pred) m))))
 
 (def mult

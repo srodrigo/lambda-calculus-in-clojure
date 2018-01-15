@@ -33,12 +33,12 @@
          (toInt ((plus (fromInt 7)) ((plus (fromInt 6)) (fromInt 2))))
          15)))
 
-  (testing "substraction"
+  (testing "subtraction"
     (is (=
-         (toInt ((substract (fromInt 7)) (fromInt 5)))
+         (toInt ((minus (fromInt 7)) (fromInt 5)))
          2))
     (is (=
-         (toInt ((substract (fromInt 7)) ((substract (fromInt 6)) (fromInt 2))))
+         (toInt ((minus (fromInt 7)) ((minus (fromInt 6)) (fromInt 2))))
          3)))
 
   (testing "multiplication"
