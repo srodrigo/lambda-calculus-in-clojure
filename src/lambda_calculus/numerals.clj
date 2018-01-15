@@ -2,13 +2,13 @@
   (:require [lambda-calculus.lambda :refer :all]))
 
 (def zero
-  (λ f (λ n n)))
+  (λ f (λ x x)))
 
 (def one
-  (λ f (λ n (f n))))
+  (λ f (λ x (f x))))
 
 (def two
-  (λ f (λ n (f (f n)))))
+  (λ f (λ x (f (f x)))))
 
 (def succ
   (λ n (λ f (λ x (f ((n f) x))))))
