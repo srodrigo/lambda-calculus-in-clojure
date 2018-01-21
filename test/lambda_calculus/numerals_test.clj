@@ -18,7 +18,7 @@
   (testing "three"
     (is (= (toInt (succ (succ (succ zero)))) 3)))
 
-  (testing "predecesor"
+  (testing "predecessor"
     (is (= (toInt (pred one)) 0))
     (is (= (toInt (pred two)) 1))
     (is (= (toInt (pred (succ (succ (succ zero))))) 2))
